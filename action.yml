@@ -1,5 +1,5 @@
 name: "httpx Action"
-description: "httpx is a fast and multi-purpose HTTP toolkit allows to run multiple probers using retryablehttp library, it is designed to maintain the result reliability with increased threads."
+description: "httpx is a fast and multi-purpose HTTP toolkit allows to run multiple probers using retryablehttp library."
 branding:
   icon: "activity"
   color: "blue"

@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/projectdiscovery/httpx/blob/master/static/httpx-logo.png" alt="httpx" width="200px"></a>
+  <img src="https://github.com/projectdiscovery/httpx/blob/master/static/httpx-logo.png" alt="httpx" width="200px">
   <br>
 </h1>
 
@@ -19,7 +19,7 @@ Example Usage
           list: hosts.txt
 ```
 
-**Example workflow** - `.github/workflows/httpx.yml`
+**Example workflow**: `.github/workflows/httpx.yml`
 
 
 ```yaml
@@ -34,10 +34,10 @@ jobs:
   httpx-scan:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-go@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v3
         with:
-          go-version: 1.15
+          go-version: 1.17
 
       - name: 💥 httpx - HTTP Web Server probing
         uses: projectdiscovery/httpx-action@main
@@ -55,9 +55,9 @@ jobs:
 Available Inputs
 ------
 
-| Key      | Description                                          | Required |
-| -------- | ---------------------------------------------------- | -------- |
-| `list`   | List of hosts to run HTTP/S Web server probbing      | false    |
-| `output` | File to save output result (default - httpx.log)     | false    |
-| `json`   | Write results in JSON format                         | false    |
-| `flags`  | Additional httpx CLI flags to use                    | false    |
+| Key      | Description                                      | Required |
+|----------|--------------------------------------------------|----------|
+| `list`   | List of hosts to run HTTP/S Web server probing   | false    |
+| `output` | File to save output result (default - httpx.log) | false    |
+| `json`   | Write results in JSON format                     | false    |
+| `flags`  | Additional httpx CLI flags to use                | false    |

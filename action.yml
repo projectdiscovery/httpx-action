@@ -41,6 +41,8 @@ runs:
         ${{ inputs.random-ua }} && echo "random-ua=-random-agent" >> $GITHUB_ENV
         echo "/home/runner/go/bin/" >> $GITHUB_PATH
       shell: bash
+      env:
+        GOPROXY: https://proxy.golang.org,direct
 
     - run: |
         httpx \

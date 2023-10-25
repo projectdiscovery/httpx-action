@@ -42,7 +42,7 @@ runs:
         echo "/home/runner/go/bin/" >> $GITHUB_PATH
       shell: bash
       env:
-        GOPROXY: https://proxy.golang.org,direct
+        GOPROXY: direct
 
     - run: |
         httpx \
